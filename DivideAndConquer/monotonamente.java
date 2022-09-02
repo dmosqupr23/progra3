@@ -23,22 +23,14 @@ public class monotonamente {
 
 	    int centro = (inicio + fin) / 2;
 
-	    if (fin < inicio) {
+	    if (fin < inicio) 
 	         return -1;
-	    }
-
-	    if (número < números[centro]) {
+	    if (número < números[centro]) 
 	        return busquedaBinaria(números, número, inicio, centro - 1);
-	    }
-
-	    if (número > números[centro]) {
+	    if (número > números[centro]) 
 	        return busquedaBinaria(números, número, centro + 1, fin);
-	    }
-
-	    if (número == números[centro]) {
+	    if (número == números[centro]) 
 	        return centro;
-	    }
-
 	    return -1;
 	}
 }
