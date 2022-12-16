@@ -17,8 +17,7 @@ public class mergeMultiple {
 		}
 	}
 
-	public static void MergeArrays(int[] arr1, int[] arr2, int[] arr3, int ini1, int ini2, int fin1, int fin2,
-			int ind3) {
+	public static void MergeArrays(int[] arr1, int[] arr2, int[] arr3, int ini1, int ini2, int fin1, int fin2, int ind3) {
 		if ((ini1 < fin1) && (ini2 < fin2)) {
 			if (arr1[ini1] <= arr2[ini2]) {
 				arr3[ind3] = arr1[ini1];
